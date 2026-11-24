@@ -4,13 +4,16 @@ fields:
     required: true
     unique: true
   - name: name
+    rename_to: full_name
     type: string
     required: true
     min_length: 2
+    transform: trim
   - name: email
     type: string
     required: true
     pattern: "^[^@]+@[^@]+\\.[^@]+$"
+    transform: lower
   - name: age
     type: integer
     min: 16

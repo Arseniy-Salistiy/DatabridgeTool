@@ -5,3 +5,5 @@ __pycache__/
 .idea/
 .vscode/
 .mypy_cache/
+errors.csv
+report.html

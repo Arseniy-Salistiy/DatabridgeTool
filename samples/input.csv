@@ -1,0 +1,12 @@
+id,name,email,age,birth_date
+1,  Иван  ,IVAN@mail.ru,25,1999-01-15
+2,Мария,maria.mail.ru,30,1994-05-20
+3,Пётр,petr@mail.ru,200,2000-03-10
+4,,empty@mail.ru,22,2002-07-01
+5,Анна,anna@mail.ru,abc,2001-11-11
+1,Дубликат,dup@mail.ru,21,2003-04-12
+6,Ольга,olga@mail.ru,19,1998-99-99
+7,Дмитрий,dmitry@mail.ru,15,2009-02-02
+8,Елена,elena@site,28,1996-08-18
+9,А,short@mail.ru,24,2000-12-12
+10,Сергей,SERGEY@MAIL.RU,35,1989-06-30

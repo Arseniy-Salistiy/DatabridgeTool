@@ -18,9 +18,9 @@
 <body>
     <h1>Отчёт об обработке данных (DataBridge)</h1>
     <div class="stats">
-        <div class="card"><h3>Всего записей</h3><p>2</p></div>
-        <div class="card"><h3>Успешно</h3><p style="color: green;">1</p></div>
-        <div class="card"><h3>С ошибками</h3><p style="color: red;">1</p></div>
+        <div class="card"><h3>Всего записей</h3><p>11</p></div>
+        <div class="card"><h3>Успешно</h3><p style="color: green;">2</p></div>
+        <div class="card"><h3>С ошибками</h3><p style="color: red;">9</p></div>
     </div>
     <h2>Детализация ошибок</h2>
     <table>
@@ -39,6 +39,62 @@
             <td>email</td>
             <td>maria.mail.ru</td>
             <td>поле &quot;email&quot; не соответствует формату</td>
+        </tr>
+        
+        <tr>
+            <td>3</td>
+            <td>age</td>
+            <td>200</td>
+            <td>поле &quot;age&quot; вне диапазона (200)</td>
+        </tr>
+        
+        <tr>
+            <td>4</td>
+            <td>name</td>
+            <td></td>
+            <td>поле &quot;name&quot; обязательно для заполнения</td>
+        </tr>
+        
+        <tr>
+            <td>5</td>
+            <td>age</td>
+            <td>abc</td>
+            <td>поле &quot;age&quot; должно быть целым числом (abc)</td>
+        </tr>
+        
+        <tr>
+            <td>6</td>
+            <td>id</td>
+            <td>1</td>
+            <td>поле &quot;id&quot; должно быть уникальным (дубликат: 1)</td>
+        </tr>
+        
+        <tr>
+            <td>7</td>
+            <td>birth_date</td>
+            <td>1998-99-99</td>
+            <td>поле &quot;birth_date&quot; не соответствует формату даты YYYY-MM-DD (1998-99-99)</td>
+        </tr>
+        
+        <tr>
+            <td>8</td>
+            <td>age</td>
+            <td>15</td>
+            <td>поле &quot;age&quot; вне диапазона (15)</td>
+        </tr>
+        
+        <tr>
+            <td>9</td>
+            <td>email</td>
+            <td>elena@site</td>
+            <td>поле &quot;email&quot; не соответствует формату</td>
+        </tr>
+        
+        <tr>
+            <td>10</td>
+            <td>name</td>
+            <td>А</td>
+            <td>поле &quot;name&quot; короче 2 символов</td>
         </tr>
         
         </tbody>
