@@ -42,7 +42,7 @@ def convert(
             ext = target_format.lower().lstrip(".")
             output_path = input_file.with_suffix(f".{ext}")
 
-        reader = get_reader(input_file, delimiter=delimiter, hasHeaders=not no_headers)
+        reader = get_reader(input_file, delimiter=delimiter, has_headers=not no_headers)
         rows = reader.read(input_file)
 
         if config_path:
@@ -94,7 +94,7 @@ def validate(
     no_headers: bool,
 ):
     try:
-        reader = get_reader(input_file, delimiter=delimiter, hasHeaders=not no_headers)
+        reader = get_reader(input_file, delimiter=delimiter, has_headers=not no_headers)
         rows = reader.read(input_file)
         config = load_config(config_path)
 
@@ -129,7 +129,7 @@ def validate(
 def stats(input_file: Path, delimiter: str, no_headers: bool):
     """Выводит базовую статистику по файлу (строки, колонки, пустые значения)."""
     try:
-        reader = get_reader(input_file, delimiter=delimiter, hasHeaders=not no_headers)
+        reader = get_reader(input_file, delimiter=delimiter, has_headers=not no_headers)
         rows = reader.read(input_file)
 
         print(f"Файл: {input_file}")

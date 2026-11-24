@@ -4,9 +4,9 @@ from typing import Any
 from readers.base import InterfaceReader, DataBridgeError
 
 class CsvReader(InterfaceReader):
-    def __init__(self, delimiter: str = ",", hasHeaders: bool = True):
+    def __init__(self, delimiter: str = ",", has_headers: bool = True):
         self.delimiter = delimiter
-        self.hasHeaders = hasHeaders
+        self.has_headers = has_headers
 
     def read(self, file_path: Path) -> list[dict[str, Any]]:
         if not file_path.exists():
@@ -21,7 +21,7 @@ class CsvReader(InterfaceReader):
                 if first_row is None:
                     return records
 
-                if self.hasHeaders:
+                if self.has_headers:
                     headers = [i.strip() for i in first_row]
                 else:
                     headers = [f"колонка_{i}" for i in range(len(first_row))]

@@ -5,11 +5,11 @@ from readers.excel_reader import ExcelReader
 from readers.json_reader import JsonReader
 from readers.base import DataBridgeError
 
-def get_reader(file_path: Path, delimiter: str = ",", hasHeaders: bool = True):
+def get_reader(file_path: Path, delimiter: str = ",", has_headers: bool = True):
     e = file_path.suffix.lower()
 
     if e == ".csv":
-        return CsvReader(delimiter, hasHeaders)
+        return CsvReader(delimiter, has_headers)
     elif e == ".json":
         return JsonReader()
     elif e == ".xlsx":
