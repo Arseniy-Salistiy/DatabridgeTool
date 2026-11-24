@@ -1,4 +1,4 @@
-from pathlib import Path
+"""from pathlib import Path
 from readers.factory import get_reader
 from readers.base import DataBridgeError
 
@@ -18,3 +18,9 @@ for file_path in test_files:
             print(row)
     except DataBridgeError as e:
         print(f"Поймана ошибка: {e}")
+"""
+
+from cli.main import cli
+
+if __name__ == "__main__":
+    cli()
